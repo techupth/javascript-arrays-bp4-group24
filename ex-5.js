@@ -9,16 +9,33 @@ const employees = [
     age: 25,
     hobbies: ["Cryptocurrency", "Social media"],
   },
-  {
-    name: "Alicia",
-    age: 29,
-    hobbies: ["Shopping", "Reading novels"],
-  },
-  {
-    name: "Kody",
-    age: 19,
-    hobbies: ["Computer games", "Wakeboard"],
-  },
 ];
-
 // Start coding here
+let alex = employees[1].name;
+let alexHobbies = employees[1].hobbies;
+let alexAndJamesAge = employees[0].age + employees[1].age;
+console.log(alexAndJamesAge);
+
+//Exercise03//
+employees[1].hobbies.push("Watching basketball");
+console.log(employees[1]);
+
+
+//Exercise04//
+employees.push({
+  name:"Alicia",
+  age:29,
+  hobbies:["Shopping","Reading novels"],
+});
+
+employees.push({
+  name:"Kody",
+  age:19,
+  hobbies:["Computer games","Wakeboard"],
+});
+
+console.log(employees);
+
+//Exercise05//
+employees.pop();
+console.log(employees);
