@@ -10,5 +10,13 @@ const employees = [
     hobbies: ["Cryptocurrency", "Social media"],
   },
 ];
-
 // Start coding here
+let alex = employees[1].name;
+let alexHobbies = employees[1].hobbies;
+let alexAndJamesAge = employees[0].age + employees[1].age;
+console.log(alexAndJamesAge);
+
+//Exercise03//
+employees[1].hobbies.push("Watching basketball");
+console.log(employees[1]);
+
